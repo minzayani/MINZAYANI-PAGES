@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min video website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #f68bdf, #f699ee);
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header .logo {
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .video-player {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .video-player video {
+            width: 100%;
+            max-width: 800px;
+            border: 4px solid #ffb6f2;
+            border-radius: 10px;
+        }
+
+        .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .video-list .video-item {
+            margin-bottom: 20px;
+            width: calc(33% - 20px);
+            text-align: center;
+        }
+
+        .video-list .video-item video {
+            width: 100%;
+            border: 3px solid #f592e4;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .video-list .video-item video:hover {
+            transform: scale(1.05);
+        }
+
+        .video-list .video-item p {
+            font-size: 16px;
+            color: #f883dd;
+            font-weight: bold;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #f875e2, #f281d4);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MintSite</div>
+        <nav>
+            <ul>
+            <a href="gallery.html">Gallery</a> |
+            <a href="biodata.html">Biodata</a> |
+            <a href="table.html">Education</a> |
+            <a href="video.html">Video</a> |
+            <a href="email.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="video-player">
+            <video controls>
+                <source src="video/Tinker Bell _ The Mainland _ Disney Junior UK.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="video-list">
+            <div class="video-item">
+                <video controls>
+                    <source src="video/Henry Moodie - drunk text (official video).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>HENRY MOODIE- DRUNK TEXT</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="video/Budi Doremi - Tolong (Official Lyric Video).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>BUDI DOREMI-TOLONG</p>
+            </div>
+            <div class="video-item">
+                <video controls>
+                    <source src="video/Ava Max - Choose Your Fighter (From Barbie The Album) [Official Audio].mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>AVA MAX</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Min VideoSite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
